@@ -20,16 +20,6 @@ public class Multmatriz {
         ec2 = Integer.parseInt(JOptionPane.showInputDialog("¿Columnas matriz 2?"));
         Leer(me2, ef2, ec2);
         if (ec1 == ef2) {
-            /*for (ei = 1; ei <= ef1; ei++) {
-                for (ek = 1; ek <= ec2; ek++) {
-                    esuma = 0;
-                    for (ez = 1; ez <= ef2; ez++) {
-                        esuma = esuma + me1[ei][ez] * me2[ez][ek];
-
-                    }
-                    me3[ei][ek] = esuma;
-                }
-            }*/
             multiplicar(ef1,ec2, me1, me2, me3);
             Escribirm(me1, ef1, ec1, "matriz 1");
             Escribirm(me2, ef2, ec2, "matriz 2");
